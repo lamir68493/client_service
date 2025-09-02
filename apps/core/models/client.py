@@ -14,7 +14,7 @@ class Gender(models.IntegerChoices):
 
 
 class Client(models.Model):
-    id = models.AutoField(primary_key=True)
+    # id = models.AutoField(primary_key=True)
     # Звичайні поля
     surname = models.CharField(max_length=50)
     name = models.CharField(max_length=50)
