@@ -2,6 +2,7 @@ import uuid
 
 from django.db import models
 
+from .accounts import Account
 # from apps.core.models.validators.validators import validate_not_future
 from .validators.validators import validate_not_future
 
@@ -27,7 +28,10 @@ class Client(models.Model):
     # Метадані
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    #Методи
+    # Зв'язки
+    address = models.OneToOneField("Address", on_delete=models.SET_NULL, null=True, blank=True)
+    accounts = models.ManyToManyField("Account", related_name="clients")
+    # Методи
     def __str__(self):
         return (
             f"{self.id} "
