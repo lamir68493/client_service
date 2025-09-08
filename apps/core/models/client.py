@@ -13,7 +13,6 @@ class Gender(models.IntegerChoices):
     FEMALE = 2, "Female"
     OTHER = 3, "Other"
 
-
 class Client(models.Model):
     id = models.BigAutoField(primary_key=True)
     # Звичайні поля
