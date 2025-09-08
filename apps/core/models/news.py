@@ -12,11 +12,7 @@ class News(models.Model):
     def __str__(self):
         return (
             f"{self.id} "
-            f"{self.surname} "
-            f"{self.name} "
-            f"{self.patronymic} "
-            f"{self.email} "
-            f"{self.birthday} "
-            f"{self.gender} "
+            f"{self.title} "
+            f"{self.content} "
             f"{super().__str__()} "
         )
