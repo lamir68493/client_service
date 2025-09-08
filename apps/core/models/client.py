@@ -2,7 +2,7 @@ import uuid
 
 from django.db import models
 
-from .accounts import Account
+from .account import Account
 # from apps.core.models.validators.validators import validate_not_future
 from .validators.validators import validate_not_future
 
