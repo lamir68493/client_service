@@ -23,7 +23,7 @@ class Client(models.Model):
     email = models.EmailField()
     birthday = models.DateField(validators=[validate_not_future])
     gender = models.IntegerField(choices=Gender.choices, default=Gender.NOT_SPECIFIED)
-    photo = models.ImageField(upload_to='client_photos/', null=True, blank=True)
+    photo = models.ImageField(upload_to="client_photos/", null=True, blank=True)
     uuid = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     # Метадані
     created_at = models.DateTimeField(auto_now_add=True)
@@ -45,7 +45,7 @@ class Client(models.Model):
         )
 
     class Meta:
-        ordering = ['created_at']
-        # ordering = ['-created_at']
-        verbose_name = 'Client'
-        verbose_name_plural = 'Clients'
+        ordering = ["created_at"]
+        # ordering = ["-created_at"]
+        verbose_name = "Client"
+        verbose_name_plural = "Clients"
