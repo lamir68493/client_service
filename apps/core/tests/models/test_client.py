@@ -4,18 +4,6 @@ import uuid
 
 from apps.core.models.client import Gender, Client
 
-"""
-id = models.BigAutoField(primary_key=True)
-# Звичайні поля
-surname = models.CharField(max_length=50)
-name = models.CharField(max_length=50)
-patronymic = models.CharField(max_length=50)
-email = models.EmailField()
-birthday = models.DateField(validators=[validate_not_future])
-gender = models.IntegerField(choices=Gender.choices, default=Gender.NOT_SPECIFIED)
-photo = models.ImageField(upload_to="client_photos/", null=True, blank=True)
-uuid = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
-"""
 
 # Test Case - Набір тестів
 class ClientModelTests(unittest.TestCase):
