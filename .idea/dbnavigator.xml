@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
@@ -32,7 +32,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="7d08cfca-1403-4906-9d3f-e30470f69db9" object-ref="schemas/main/tables/core_phone" />
+      <object connection-id="7d08cfca-1403-4906-9d3f-e30470f69db9" object-ref="schemas/main/tables/core_client" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
@@ -54,6 +54,9 @@
     <filter-actions connection-id="7d08cfca-1403-4906-9d3f-e30470f69db9" dataset="main.core_accountcoins" active-filter-id="" />
     <filter-actions connection-id="7d08cfca-1403-4906-9d3f-e30470f69db9" dataset="main.core_client" active-filter-id="e3f9884c-95d6-41da-983b-2a9c10b1dc25">
       <filter id="e3f9884c-95d6-41da-983b-2a9c10b1dc25" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND" />
+    </filter-actions>
+    <filter-actions connection-id="7d08cfca-1403-4906-9d3f-e30470f69db9" dataset="main.core_address" active-filter-id="d175d693-e831-4c69-9d5b-738cfcf0f742">
+      <filter id="d175d693-e831-4c69-9d5b-738cfcf0f742" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND" />
     </filter-actions>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
