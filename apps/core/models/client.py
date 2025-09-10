@@ -24,12 +24,12 @@ class Client(models.Model):
     gender = models.IntegerField(choices=Gender.choices, default=Gender.NOT_SPECIFIED)
     photo = models.ImageField(upload_to="client_photos/", null=True, blank=True)
     uuid = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
-    # Метадані
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
     # Зв'язки
     address = models.OneToOneField("Address", on_delete=models.SET_NULL, null=True, blank=True)
     accounts = models.ManyToManyField("AccountCoins", related_name="clients")
+    # Метадані
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     # Методи
     def __str__(self):
         return (
